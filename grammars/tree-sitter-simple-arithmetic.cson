@@ -1,0 +1,25 @@
+id: 'simple-arithmetic'
+name: 'SimpleArithmetic'
+type: 'tree-sitter'
+parser: 'tree-sitter-simple-arithmetic'
+legacyScopeName: 'source.sa'
+version: 100
+
+fileTypes: ['sa']
+
+injectionRegex: 'sa'
+
+firstLineRegex: []
+
+folds: []
+
+# comments:
+#   start: '// '
+
+scopes:
+  'number': 'constant.numeric'
+  '"="': 'keyword.operator.sa'
+  '"+"': 'keyword.operator.sa'
+  '"-"': 'keyword.operator.sa'
+  '"*"': 'keyword.operator.sa'
+  '"/"': 'keyword.operator.sa'
